@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "help"="$1" ] || [ "h"="$1" ] || [ "-h"="$1" ]; then
+if [ "help" == "$1" ] || [ "h" == "$1" ] || [ "-h" == "$1" ]; then
     echo "new_branch_name upstream_branch_name"
     exit 1
 fi
@@ -15,7 +15,7 @@ if [ -z "$2" ]; then
     exit 1
 fi
 
-me
+echo "hope you are in the right workspce"
 
 echo "create branch $1 base on upstream $2"
 
